@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+}
+body {
+      position: relative;
+      height: 100vh;
+      /* background: #111; */
+}
+.container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.container .toggle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 52px;
+      background: #444;
+      border-radius: 30px;
+}
+.container .toggle .toggle-button {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: #fff;
+      top: 5px;
+      left: 5px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.5s;
+}
+.container .text {
+      position: absolute;
+      font-size: 25px;
+      left: 95px;
+      margin-left: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      transition: 0.5s;
+}
+
+/* Class được toggle*/
+.container .toggle.active {
+      background: rgb(95, 248, 24);
+}
+
+.container .toggle.active .toggle-button {
+      left: 55px;
+}
